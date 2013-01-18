@@ -13,5 +13,6 @@
 		<a href="content.php?data=op4">Option 4</a>
 	</nav>
 	<div id="content"></div>
+	<p>The time in my home town is <span id="timer"></span></p>
 </body>
 </html>

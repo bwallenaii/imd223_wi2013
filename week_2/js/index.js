@@ -1,3 +1,8 @@
+function updateTime()
+{
+	document.id("timer").load("time.php");
+}
+
 document.addEvent("domready", function(){
 	$$("nav a").addEvent("click", function(e){
 		e.stop();
@@ -6,5 +11,7 @@ document.addEvent("domready", function(){
 		document.id("content").load(loc);
 		return false;
 	});
+
+	updateTime.periodical(1000);
 
 });
